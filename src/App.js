@@ -2,7 +2,7 @@ import "./App.css";
 import Video from "./pages/Video";
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from 'firebase/firestore/lite';
-import db from "./settings/firebase";
+
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
   const [video, setVideos] = useState([]);
 
   async function getVideos() {
-    const videosCollection = collection(db, "videos");
+    const videosCollection = collection(your database , "videos");
     const videosSnapshot = await getDocs(videosCollection);
     const videosList = videosSnapshot.docs.map(doc => doc.data());
     setVideos(videosList);
