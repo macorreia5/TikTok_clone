@@ -1,0 +1,17 @@
+.videoSide {
+    position: absolute;
+    bottom: 150px; /*ir mudando depois coforme for colocando os icons */
+    right: 10px;
+    color: white;
+}
+
+.videoSide_options {
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and(max-width: 440px){
+    .videoSide {
+        top: 50%;
+    }
+}
